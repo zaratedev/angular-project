@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TitleComponent implements OnInit{
   public name : string;
   public edad : number;
+  public isAvailable : boolean = true;
   public edades : number[];
 
   constructor() {}
