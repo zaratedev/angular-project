@@ -11,6 +11,8 @@ export class TitleComponent implements OnInit{
   public isAvailable : boolean = true;
   public edades : number[];
 
+  public css_classes : string[] = ['active', 'shadow'];
+
   constructor() {}
 
   // Se ejecuta cuando el componente ha sido inicializado
