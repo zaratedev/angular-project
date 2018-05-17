@@ -1,0 +1,8 @@
+:host {
+  display: block;
+}
+/*Etiquetas que esten por ensima del dom (ancestros)*/
+:host-context(.dark) h1{
+  background-color: black;
+  color: white;
+}
