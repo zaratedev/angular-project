@@ -19,6 +19,10 @@ export class TitleComponent implements OnInit{
   ngOnInit() {
     this.name = 'Jonathan';
     this.edad = 24;
+
+    setTimeout( () => {
+      this.isAvailable = false;
+    }, 3000)
   }
 
   getEdadNombre() : string {

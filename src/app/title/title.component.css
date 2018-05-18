@@ -10,7 +10,13 @@
   background-color: black;
   color: white;
 }
-
+.highlight {
+  background-color: rgb(200, 50, 50);
+  border-radius: 4px;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 1em;
+}
 button {
   border: 0;
   outline: 0;
