@@ -23,6 +23,10 @@ a {
   text-decoration: underline;
 }
 
+.category {
+  display: inline-block; 
+}
+
 .highlight {
   background-color: rgb(200, 50, 50);
   color: white;
