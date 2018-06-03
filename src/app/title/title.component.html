@@ -1,11 +1,21 @@
 <h1>Curso de Angular</h1>
-<h3>Tutor: {{ name }}</h3>
 <p *ngIf="!isAvailable; else available">Lanzamiento: 20 Nov 2018</p>
 
 <ng-template #available>
   <span class="highlight">Curso disponible</span>
 </ng-template>
 
+<h3>Tutor: {{ name }}</h3>
 <div class="">
-  <button [disabled]="isAvailable" [ngClass]="css_classes" type="button" name="button">Inscribir</button>
+  <a>Más información <i class="fa " [ngClass]="{'fa-chevron-circle-down': !moreInformation, 'fa-chevron-circle-up': moreInformation}"></i></a>
+  <p *ngIf="moreInformation">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
+</div>
+<ul>
+  <li *ngFor="let topic of topics">{{ topic }}</li>
+</ul>
+<div class="">
+  <button [disabled]="isAvailable" [ngClass]="{active: isAvailable, shadow: !isAvailable}" type="button" name="button">Inscribir</button>
 </div>

@@ -7,25 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TitleComponent implements OnInit{
   public name : string;
-  public edad : number;
   public isAvailable : boolean = true;
   public edades : number[];
-
-  public css_classes : string[] = ['active', 'shadow'];
+  public moreInformation : boolean = false;
+  public topics : string[];
 
   constructor() {}
 
   // Se ejecuta cuando el componente ha sido inicializado
   ngOnInit() {
     this.name = 'Jonathan';
-    this.edad = 24;
-
-    setTimeout( () => {
-      this.isAvailable = false;
-    }, 3000)
-  }
-
-  getEdadNombre() : string {
-    return `${this.name} : ${this.edad}`;
+    this.topics = [
+      'Fundamentos',
+      'Componentes',
+      'Directivas',
+      'Animaciones',
+      'RxJS'
+    ]
   }
 }
