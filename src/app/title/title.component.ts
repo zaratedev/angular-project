@@ -26,4 +26,8 @@ export class TitleComponent implements OnInit{
       'RxJS'
     ]
   }
+
+  toggleInformation() {
+    this.moreInformation = !this.moreInformation;
+  }
 }
